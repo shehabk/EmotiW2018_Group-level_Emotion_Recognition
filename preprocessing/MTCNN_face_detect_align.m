@@ -15,11 +15,13 @@ threshold = [0.6 0.7 0.7];%[0.6 0.7 0.9];
 
 %% add toolbox paths
 %matCaffe       = fullfile(pwd, '../tools/caffe-sphereface/matlab');
-matCaffe='/home/xin/caffe_matlab/matlab';
+%matCaffe='/home/xin/caffe_matlab/matlab';
+matCaffe='./caffe/matlab';
 %pdollarToolbox = fullfile(pwd, '../tools/toolbox');
-pdollarToolbox='./MTCNN/MTCNN_face_detection_alignment-master/code/codes/toolbox-master';
+% pdollarToolbox='./MTCNN/MTCNN_face_detection_alignment-master/code/codes/toolbox-master';
+pdollarToolbox='./toolbox';
 %MTCNN          = fullfile(pwd, '../tools/MTCNN_face_detection_alignment/code/codes/MTCNNv1');
-MTCNN = './MTCNN/MTCNN_face_detection_alignment-master/code/codes/MTCNNv2';
+MTCNN = './MTCNN/code/codes/MTCNNv2';
 addpath(genpath(matCaffe));
 addpath(genpath(pdollarToolbox));
 addpath(genpath(MTCNN));
@@ -35,7 +37,7 @@ else
 end
 caffe.reset_all();
 %modelPath = fullfile(pwd, '../tools/MTCNN_face_detection_alignment/code/codes/MTCNNv1/model');
-modelPath = './MTCNN/MTCNN_face_detection_alignment-master/code/codes/MTCNNv2/model';
+modelPath = './MTCNN/code/codes/MTCNNv2/model';
 PNet = caffe.Net(fullfile(modelPath, 'det1.prototxt'), ...
                  fullfile(modelPath, 'det1.caffemodel'), 'test');
 RNet = caffe.Net(fullfile(modelPath, 'det2.prototxt'), ...
