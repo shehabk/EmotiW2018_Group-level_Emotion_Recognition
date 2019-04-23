@@ -1,0 +1,15 @@
+[submodule "preprocessing/MTCNN"]
+	path = preprocessing/MTCNN
+	url = https://github.com/kpzhang93/MTCNN_face_detection_alignment
+[submodule "preprocessing/caffe"]
+	path = preprocessing/caffe
+	url = https://github.com/BVLC/caffe.git
+[submodule "preprocessing/toolbox"]
+	path = preprocessing/toolbox
+	url = https://github.com/pdollar/toolbox
+[submodule "preprocessing/openpose"]
+	path = preprocessing/openpose
+	url = https://github.com/CMU-Perceptual-Computing-Lab/openpose.git
+[submodule "preprocessing/bottom-up-attention"]
+	path = preprocessing/bottom-up-attention
+	url = https://github.com/peteanderson80/bottom-up-attention.git
