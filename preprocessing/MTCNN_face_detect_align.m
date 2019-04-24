@@ -27,7 +27,7 @@ addpath(genpath(pdollarToolbox));
 addpath(genpath(MTCNN));
 
 %% caffe settings
-gpu = 1;
+gpu = 0;
 if gpu
    gpu_id = 0;
    caffe.set_mode_gpu();

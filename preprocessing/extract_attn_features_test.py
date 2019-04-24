@@ -21,7 +21,9 @@ import re
 from pylab import * 
 import glob
 import sys
-sys.path.append('/home/xin/caffe-Senet/distribute/python')
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# sys.path.append('/home/xin/caffe-Senet/distribute/python')
+sys.path.insert(0, os.path.join( script_dir + '/caffe/python/'))
 import caffe
 caffe.set_mode_gpu()
 #caffe.set_device(1)

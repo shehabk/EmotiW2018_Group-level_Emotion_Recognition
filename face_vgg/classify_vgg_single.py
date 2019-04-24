@@ -95,7 +95,7 @@ def get_face_prob():
   print 'Let us play!'
   transformer_RGB = initialize_transformer(False)
   deploy_file = 'vgg_group_deploy.prototxt'
-  RGB_model = 'vgg_face_model.caffemodel'
+  RGB_model = '../models/vgg_face_model.caffemodel'
   RGB_net =  caffe.Net(deploy_file, RGB_model, caffe.TEST)
   val_face_dir = '../data/test_faces_MTCNN'
   val_dir = '../data/test'
