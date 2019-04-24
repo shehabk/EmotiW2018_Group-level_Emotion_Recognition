@@ -19,11 +19,13 @@ Extract faces using MTCNN (https://github.com/kpzhang93/MTCNN_face_detection_ali
 Human skeleton features extraction using openpose from https://github.com/CMU-Perceptual-Computing-Lab/openpose
   1) Install openpose from link above, save openpose in folder ./group_2018_code/preprocessing/openpose-master. 
   2) bash extract_skeletons_faces_poses_hands.sh in terminal, the extracted skeleton image will be saved in  ./group_2018_code/data/test_pose_hand_face
+  3) to understand the script parameters refer https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/quick_start.md#quick-start and https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/demo_overview.md and /include/openpose/flags.hpp
 ----------------------------------------------------------------------------------------------------------------------  
 
 Extract attention paches using a bottom-up attention model (https://github.com/peteanderson80/bottom-up-attention)
-  1) Install bottom-up-attention-master according to the above link into folder ./group_2018_code/preprocessing/bottom-up-attention-master
-  2) Run python extract_images_test.py in terminal, attention paches will be saved in folder ./group_2018_code/datatest_new_attentions
+  1) Install bottom-up-attention-master according to the above link into folder ./group_2018_code/preprocessing/bottom-up-attention-master, 
+  need to build using the same anaconda environment.
+  2) Run python extract_images_test.py in terminal, attention paches will be saved in folder ./group_2018_code/data/test_new_attentions
   3) Install Senet (https://github.com/hujie-frank/SENet).
   4) Download 'SENet-154-deploy.prototxt' and 'SENet.caffemodel' and save them to folder ./group_2018_code/preprocessing/
   5) Modify to use Caffe-Senet in extract_attn_features_test.py, the feature files will be stored in './group_2018_code/data/test_attentions_senet_152_features'  

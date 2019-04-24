@@ -13,3 +13,6 @@
 [submodule "preprocessing/bottom-up-attention"]
 	path = preprocessing/bottom-up-attention
 	url = https://github.com/peteanderson80/bottom-up-attention.git
+[submodule "preprocessing/SENet"]
+	path = preprocessing/SENet
+	url = https://github.com/hujie-frank/SENet
